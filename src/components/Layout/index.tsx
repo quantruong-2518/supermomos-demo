@@ -5,7 +5,9 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="m-nav flex flex-col items-center p-4 bg-page h-content overflow-auto">
+        {children}
+      </main>
     </>
   );
 }
